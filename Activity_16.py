@@ -1,5 +1,6 @@
 def get_lot():
-    return input()
+    line = input()[2:-2]
+    return [tuple(t[1:-1].split("\', \'")) for t in line.split('), (')]    
 
 
 def lot_to_cs(listOfTuples):
@@ -14,9 +15,9 @@ def display(l):
 
 
 def main():
-    cs = get_lot()
-    lot = lot_to_cs(cs)
-    display(lot)
+    lot = get_lot()
+    cs = lot_to_cs(lot)
+    display(cs)
 
 
 main()
