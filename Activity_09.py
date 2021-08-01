@@ -7,5 +7,5 @@ volume = h**2 * b**2 / k**0.5
 
 r = 3 / 4 * (volume**(1/3))
 
-print(f"Volume of tromboloid: {volume}")
-print(f"The radius of sphere with equivalent volume is: {r}")
+print(f"Volume of tromboloid: {round(volume, 3)}")
+print(f"The radius of sphere with equivalent volume is: {round(r, 3)}")
