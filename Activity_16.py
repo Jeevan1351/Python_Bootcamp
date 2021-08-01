@@ -4,9 +4,7 @@ def get_cs():
 
 def cs_to_lot(string):
     separated = string.split(';')
-    listOt = []
-    for i in separated:
-        listOt.append(tuple(i.split('=')))
+    listOt = [tuple(i.split('=')) for i in separated]
     return listOt
 
 
