@@ -13,7 +13,6 @@ def display(n):
     else:
         print(f"{n} is not a prime number.")
 
-
 def main():
     a = input_number()
     display(a)
