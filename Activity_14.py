@@ -7,7 +7,7 @@ def input_dimensions():
     return l, b, h
 
 def vol_comp(l, b, h):        
-    k = (l+b+h)**2
+    k = (l**2+b**2+h**2)
     volume = h**2 * b**2 / k**0.5
     r = (3/4 * math.pi* volume)**(1/3)
     return volume, r
