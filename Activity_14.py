@@ -1,3 +1,5 @@
+import math
+
 def input_dimensions():
     l = float(input("Enter the length of the tromboloid: "))
     b = float(input("Enter the breadth of the tromboloid: "))
@@ -7,7 +9,7 @@ def input_dimensions():
 def vol_comp(l, b, h):        
     k = (l+b+h)**2
     volume = h**2 * b**2 / k**0.5
-    r = (3/4 * volume)**(1/3)
+    r = (3/4 * math.pi* volume)**(1/3)
     return volume, r
 
 def display(ans):
