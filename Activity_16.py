@@ -10,13 +10,6 @@ def cs_to_lot(string):
     return listOt
 
 
-def lot_to_cs(listOfTuples):
-    string = ""
-    for (a, b) in listOfTuples:
-        string += a+"="+b+";"
-    return string
-
-
 def display(l):
     print(l)
 
