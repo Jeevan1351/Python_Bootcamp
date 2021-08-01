@@ -3,7 +3,6 @@ def words():
     c_w = [word for word in w]
     return w, c_w
 
-
 def main():
     wrds, c_words = words()
     wrds.sort()
