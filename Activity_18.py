@@ -1,12 +1,10 @@
+  
 def get_cs():
     return input()
 
 
 def cs_to_dict(cs):
-    my_dict = {}
-    for pair in cs.split(';'):
-        l, r = pair.split('=')
-        my_dict[l] = r
+    my_dict = {l:r for l,r in (t.split('=') for t in cs.split(';'))}
     return my_dict
 
 
